@@ -138,6 +138,26 @@ CURRICULUM = {
             "challenge": "Create variables `item = 'Keyboard'` and `price = 79.99`. Print both on one line.",
             "solution": "item = 'Keyboard'\nprice = 79.99\nprint(item, price)",
         },
+        "input() function": {
+            "theory": (
+                "### The `input()` Function\n\n"
+                "Captures user input from the console/terminal as a string.\n\n"
+                "- Pauses script execution until the user presses `Enter`.\n"
+                "- Always returns type `str`, regardless of what was typed.\n"
+                "- Combine with `int()` or `float()` to read numeric values.\n"
+            ),
+            "demo_code": (
+                "# Prompting user for their name\n"
+                "name = input('Enter your name: ')\n"
+                "print(f'Welcome, {name}!')\n\n"
+                "# Reading and converting a numeric input\n"
+                "age_str = input('Enter your age: ')\n"
+                "age = int(age_str)\n"
+                "print(f'Next year you will be {age + 1}.')\n"
+            ),
+            "challenge": "Prompt the user with 'Enter city: ' and print 'You live in <city>'.",
+            "solution": "city = input('Enter city: ')\nprint(f'You live in {city}')",
+        },
         "typecasting": {
             "theory": (
                 "### Typecasting\n\n"
@@ -403,7 +423,7 @@ CURRICULUM = {
                 "    return a + b\n\n"
                 "print('Result:', add(5, 7))\n"
             ),
-            "challenge": "Write a function `square(x)` returning $x^2$. Call with 4 and print.",
+            "challenge": "Write a function `square(x)` returning x squared. Call with 4 and print.",
             "solution": "def square(x):\n    return x * x\nprint(square(4))",
         },
         "*args": {
